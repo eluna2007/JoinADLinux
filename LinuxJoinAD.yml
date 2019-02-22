@@ -13,7 +13,7 @@
   tasks:
     - name: Install ad_auth required tools
       yum: 
-        name: realmd,PackageKit
+        name: realmd,PackageKit,pexpect.noarch
         state: present
 
     #- name: Install pexpect using pip
