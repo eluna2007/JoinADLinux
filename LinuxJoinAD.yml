@@ -13,7 +13,7 @@
   tasks:
     - name: Install ad_auth required tools
       yum: 
-        name: realmd,PackageKit,epel-release,python-pip
+        name: realmd,PackageKit,epel-release
         state: present
 
     - name: Install pexpect using pip
