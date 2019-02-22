@@ -41,7 +41,7 @@
         - restart sssd
       when: realmd_bound|failed
 
-    #- name: Restrict access based on specific ad group
+   # - name: Restrict access based on specific ad group
     #  command: /bin/bash -c "/usr/sbin/realm permit -g g_Server.{{ item }}-logon@safdal.se"
     #  with_items: "{{ inventory_hostname_short }}"
     #  when: realmd_bound|failed
