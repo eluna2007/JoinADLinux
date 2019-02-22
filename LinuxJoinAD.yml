@@ -13,12 +13,12 @@
   tasks:
     - name: Install ad_auth required tools
       yum: 
-        name: realmd,PackageKit,pexpect.noarch
+        name: realmd,PackageKit
         state: present
 
-    #- name: Install pexpect using pip
-     # pip:
-      #  name: pexpect
+    - name: Install pexpect using pip
+      pip:
+        name: pexpect
 
     - name: Check if machine is bound
       shell: /bin/bash -c "realm list | grep sssd"
