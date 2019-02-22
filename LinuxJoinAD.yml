@@ -32,7 +32,7 @@
         responses:
           Password for *: "{{ bind_password }}"
       when: realmd_bound|failed
-
+    - name: Add default_domain_suffix to sssd.conf
       lineinfile: 
         dest: /etc/sssd/sssd.conf
         line: 'default_domain_suffix = example.local'
