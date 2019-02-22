@@ -13,7 +13,7 @@
   tasks:
     - name: Install ad_auth required tools
       yum: 
-        name: libselinux-python,realmd,sssd,oddjob,oddjob-mkhomedir,adcli,samba-common,samba-common-tools,ntpdate,ntp,python-pip,sudo
+        name: realmd,PackageKit
         state: present
 
     - name: Install pexpect using pip
